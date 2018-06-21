@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.bugcatcher.calendar.view.StickyWidthLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:heightDivideWidthRatio="0.129">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周日"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周一"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周二"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周三"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周四"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周五"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="周六"
+                android:textColor="#000"
+                android:textSize="@dimen/text_size_calendar_date" />
+        </LinearLayout>
+    </com.bugcatcher.calendar.view.StickyWidthLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       />
+</LinearLayout>
